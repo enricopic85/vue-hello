@@ -14,7 +14,9 @@
         <br>
         Inserisci il tuo nome:<input v-model="name"> <button @click="saluta(); pushNomi()">aggiungi nome</button>
         <span>Ciao {{name}}</span>
-        <p>{{nameLog}}</p>
+        Inserisci una lettera e controlla che ci siano nomi che iniziano con la stessa: <input v-model="iniziale">
+        <button @click="filtraNomi">Controlla</button>
+        <span>{{iniziale}}</span>
     </div>
    <script src="js/script.js"></script> 
 </body>
